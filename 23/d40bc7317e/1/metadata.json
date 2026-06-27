@@ -1,0 +1,73 @@
+{
+  "cli_version": "0.7.7",
+  "checkpoint_id": "23d40bc7317e",
+  "session_id": "3305fb9e-020a-4a79-b09b-e7548f1de90c",
+  "strategy": "manual-commit",
+  "created_at": "2026-06-27T23:00:32.064361Z",
+  "branch": "feat/tectonic-and-gpt5-compat",
+  "checkpoints_count": 1,
+  "save_step_count": 1,
+  "files_touched": [],
+  "agent": "Claude Code",
+  "model": "eu.anthropic.claude-opus-4-6-v1[1m]",
+  "turn_id": "91a7f6f2cd4c",
+  "token_usage": {
+    "input_tokens": 8870,
+    "cache_creation_tokens": 673321,
+    "cache_read_tokens": 15402332,
+    "output_tokens": 77533,
+    "api_call_count": 106
+  },
+  "skill_events_version": 1,
+  "skill_events": [
+    {
+      "id": "claude-skill-toolu_bdrk_01Hjyc2hxLhKsM5rUaL5tGZX",
+      "event_type": "tool_invocation",
+      "skill": {
+        "name": "claude-api"
+      },
+      "source": {
+        "agent": "claude-code",
+        "signal": "skill_tool_use",
+        "confidence": "explicit"
+      },
+      "turn_id": "91a7f6f2cd4c",
+      "transcript_anchor": {
+        "unit": "line",
+        "start": 356,
+        "end": 357,
+        "entry_ids": [
+          "69618a93-2d9b-4e98-9424-b9902b2cc461"
+        ],
+        "tool_use_id": "toolu_bdrk_01Hjyc2hxLhKsM5rUaL5tGZX"
+      },
+      "native": {
+        "tool_name": "Skill",
+        "tool_use_id": "toolu_bdrk_01Hjyc2hxLhKsM5rUaL5tGZX"
+      },
+      "collapse": {
+        "target": "tool_pair",
+        "label": "Skill: claude-api",
+        "default_collapsed": true
+      }
+    }
+  ],
+  "session_metrics": {
+    "turn_count": 8
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 2,
+      "user_lines_added": 191,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        "research-claw/open_research_claw.egg-info/PKG-INFO": 7,
+        "research-claw/open_research_claw.egg-info/SOURCES.txt": 176,
+        "research-claw/open_research_claw.egg-info/dependency_links.txt": 1,
+        "research-claw/open_research_claw.egg-info/top_level.txt": 7
+      }
+    }
+  ]
+}
