@@ -1,0 +1,7 @@
+➜  research-claw git:(main) ✗ bash setup_uv.sh
+Creating virtual environment at: /Users/shuochen/a-PhD-Repo/h-hackathon/researcher-baobyte/.venv
+Using CPython 3.11.12
+Creating virtual environment at: .venv
+Activate with: source .venv/bin/activate
+Installing Research Claw and its dependencies
+error: File not found: `requirements.txt`
