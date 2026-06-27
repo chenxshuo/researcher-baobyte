@@ -1,0 +1,26 @@
+{
+  "cli_version": "0.7.7",
+  "checkpoint_id": "2588a4c0fa78",
+  "strategy": "manual-commit",
+  "branch": "feat/tectonic-and-gpt5-compat",
+  "checkpoints_count": 7,
+  "files_touched": [
+    "research-claw/core/project.py",
+    "research-claw/providers/openai_provider.py"
+  ],
+  "sessions": [
+    {
+      "metadata": "/25/88a4c0fa78/0/metadata.json",
+      "transcript": "/25/88a4c0fa78/0/full.jsonl",
+      "content_hash": "/25/88a4c0fa78/0/content_hash.txt",
+      "prompt": "/25/88a4c0fa78/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 8159,
+    "cache_creation_tokens": 452568,
+    "cache_read_tokens": 8991890,
+    "output_tokens": 53018,
+    "api_call_count": 73
+  }
+}
