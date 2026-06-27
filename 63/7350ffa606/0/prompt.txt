@@ -1,0 +1,29 @@
+我又下载了另外两个供参考的代码库 一个是 [AutoResearchClaw](AutoResearchClaw/)  一个是 [feynman](feynman/)  现在我们需要看看这两个代码库 是否更加完整 更适合我们基于三个中的一个 来进行迭代开发 实现一个完成一个very basic but minimal demo 从命令行启动agent 然后提供给一个prompt 然后就开始进行ideas寻找调研+明确尝试的idea 然后写代码部署实验搜集结果 然后 把结果写到latex pdf里面 带画图 最终产出一个paper 用neurips的模板 然后产出一个code repo； 相当于一个minimal的完整流程； 这个prompt的实际task可以很简单 比如1+1的运算（但这个有点没意思 所以可以是一个LLM研究领域相关的一个比较简单的research task； 基于这个点 首先我们来看看 当前的code repo是否可以完成这些事情？ 如果不行 如何添加这些功能 一些比较复杂的功能 如何直接dispatch codex来执行 直接收结果
+
+---
+
+先别具体跑这些code 先从里面的结构代码层面评估一下
+
+---
+
+先别具体跑这些code 先从里面的结构代码层面评估一下
+
+---
+
+我有添加了一个 [research-claw](research-claw/)  你也看看这个仓库里面 是否可以更好的更快捷的帮我们实现
+
+---
+
+那我们是直接基于research-claw开始改 还是另起一个folder 里面写我们独立的项目？
+
+---
+
+[research-claw](research-claw/) 里面这个库比较大 哪些文件 folder 可以移除？先分析 先不删除
+
+---
+
+你直接看看大文件的分布 用dh啥的试试看
+
+---
+
+好的 我已经清理过了 现在需要看看我们怎么基于research-claw来看看他的效果 首先我想把research-claw的环境设置一下 可以在research-claw里面弄一个bash script 里面用uv来构建属于他的环境
