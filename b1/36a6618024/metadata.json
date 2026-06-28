@@ -3,7 +3,7 @@
   "checkpoint_id": "b136a6618024",
   "strategy": "manual-commit",
   "branch": "feature/selfgrow",
-  "checkpoints_count": 5,
+  "checkpoints_count": 8,
   "files_touched": [
     "research-claw/examples/budget-cot-paper/README.md",
     "research-claw/examples/budget-cot-paper/experiment_matrix.py",
@@ -22,6 +22,19 @@
       "transcript": "/b1/36a6618024/0/full.jsonl",
       "content_hash": "/b1/36a6618024/0/content_hash.txt",
       "prompt": ""
+    },
+    {
+      "metadata": "/b1/36a6618024/1/metadata.json",
+      "transcript": "/b1/36a6618024/1/full.jsonl",
+      "content_hash": "/b1/36a6618024/1/content_hash.txt",
+      "prompt": "/b1/36a6618024/1/prompt.txt"
     }
-  ]
+  ],
+  "token_usage": {
+    "input_tokens": 30101,
+    "cache_creation_tokens": 2561374,
+    "cache_read_tokens": 71201067,
+    "output_tokens": 210085,
+    "api_call_count": 283
+  }
 }

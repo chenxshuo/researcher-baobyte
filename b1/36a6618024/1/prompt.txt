@@ -1,0 +1,26 @@
+好的 我们接下来我想完善一下 research experiment这个部分的能力 核心就是想让agent自己去通过不断的迭代提升自己 比如给定一个metric 和一个task agent通过一轮一轮的实验 尝试新方法 然后收集结果 评判 然后决定下一次改进； 把这个功能加入到 @research-claw/ 里面 我添加了一个仓库你可以参考 就是 @autoresearch/
+
+---
+
+那我如何使用这个功能呢
+
+---
+
+我们先想一个更好的任务 可以快速跑完 但也有一定的价值 还能够有比较好的指标优化出来 方便我去快速展示这个能力的demo
+
+---
+
+那我们展示的时候 我希望就是一个prompt in然后从idea调研 部署实验收集结果迭代实验方法 最后画图写论文 写abstract intro related work method experiments discussion 这整个流程现在该如何去做 ； 这个task可以得到一个什么样的学术研究问题的workshop级别的paper？
+
+---
+
+这个现象我们也要提出一个方法使得效果更好 在预算内默认的CoT反倒会下降 但是我们的better CoT可以更好
+
+---
+
+实验结果可以先填一个预期的结果 然后画图和生成pdf pdf需要 那我们展示的时候 我希望就是一个prompt in然后从idea调研 部署实验收集结果迭代实验方法 最后画图写论文/effort
+  写abstract intro related work method experiments discussion
+
+---
+
+workspace里面的东西也可以提交一下 ； selfgrow的我已经弄好了 你现在再看看
