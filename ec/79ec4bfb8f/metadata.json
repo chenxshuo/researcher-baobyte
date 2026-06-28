@@ -1,0 +1,31 @@
+{
+  "cli_version": "0.7.7",
+  "checkpoint_id": "ec79ec4bfb8f",
+  "strategy": "manual-commit",
+  "branch": "feature/selfgrow",
+  "checkpoints_count": 3,
+  "files_touched": [
+    "research-claw/agent/tools/selfgrow_plan.py",
+    "research-claw/config/agent_profiles/chat_mode_agent.json",
+    "research-claw/config/agent_profiles/project_mode_agent.json",
+    "research-claw/config/selfgrow_sources.json",
+    "research-claw/config/tools.json",
+    "research-claw/core/automation/runtime.py",
+    "research-claw/core/automation/selfgrow.py"
+  ],
+  "sessions": [
+    {
+      "metadata": "/ec/79ec4bfb8f/0/metadata.json",
+      "transcript": "/ec/79ec4bfb8f/0/full.jsonl",
+      "content_hash": "/ec/79ec4bfb8f/0/content_hash.txt",
+      "prompt": "/ec/79ec4bfb8f/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 29827,
+    "cache_creation_tokens": 2553986,
+    "cache_read_tokens": 67763717,
+    "output_tokens": 205937,
+    "api_call_count": 275
+  }
+}
