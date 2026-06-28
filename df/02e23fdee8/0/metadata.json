@@ -1,0 +1,50 @@
+{
+  "cli_version": "0.7.7",
+  "checkpoint_id": "df02e23fdee8",
+  "session_id": "019f0b08-f7c5-7192-877b-0f6b5ed89ac2",
+  "strategy": "manual-commit",
+  "created_at": "2026-06-28T00:22:52.713559Z",
+  "branch": "feature/midware",
+  "checkpoints_count": 2,
+  "save_step_count": 1,
+  "files_touched": [
+    "research-claw/agent/services/research_run_api.py"
+  ],
+  "agent": "Codex",
+  "model": "gpt-5.5",
+  "turn_id": "e7759160b005",
+  "token_usage": {
+    "input_tokens": 1814844,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 36878208,
+    "output_tokens": 94648,
+    "api_call_count": 262
+  },
+  "session_metrics": {
+    "turn_count": 18
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-06-28T00:22:52.422268Z",
+    "agent_lines": 0,
+    "agent_removed": 0,
+    "human_added": 306,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 306,
+    "total_lines_changed": 306,
+    "agent_percentage": 0,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 2,
+      "user_lines_added": 153,
+      "user_lines_removed": 0,
+      "agent_lines_added": 1,
+      "agent_lines_removed": 1,
+      "user_added_per_file": {
+        "research-claw/agent/services/research_run_api.py": 153
+      }
+    }
+  ]
+}
