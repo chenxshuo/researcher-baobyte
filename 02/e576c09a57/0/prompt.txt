@@ -1,0 +1,663 @@
+You are working on the frontend prototype for Nobli.
+
+Before implementing anything, read these files carefully:
+
+* `AGENTS.md`
+* `design_system.md`
+
+Treat them as the source of truth.
+
+## Product Name
+
+Use the product name:
+
+```txt
+Nobli
+```
+
+Do not use the old name `Research Compass` anywhere in the UI, code comments, mock data labels, component names, or documentation created during this task.
+
+---
+
+## Goal
+
+Build the first working frontend version of Nobli.
+
+Nobli is a frontend-first, mock-first but backend-ready agentic workspace for AI research scientists and researchers writing papers. The product should feel like a serious AI research scientist operating system, not a static dashboard, not a marketing landing page, and not a generic AI playground.
+
+The first version should include two major states:
+
+1. Home / New Task Input Screen
+2. Running Agent Workspace
+
+Use React + TypeScript.
+
+Use mock data only for now, but structure the frontend so it can connect to backend APIs later through service functions.
+
+Do not implement backend logic inside React components.
+
+Do not create API routes, backend services, authentication, database, or production infrastructure.
+
+Only create frontend service wrappers that can later call APIs.
+
+---
+
+## First-pass implementation priority
+
+This is the first frontend pass. Prioritize a stable, presentable MVP over exhaustive feature coverage.
+
+Must be complete and polished:
+
+1. Home → Running Agent Workspace transition
+2. Home Mode Step Selector
+3. Running Workspace Process Bar
+4. Agent stream with timestamps, status pills, source chips, and tool blocks
+5. Clickable tool block → Detail panel update
+6. Full Automation / Discuss toggle
+7. Upload, microphone, approval, Export PDF, Overleaf, and Send to phone simulated state changes
+8. Responsive layout for desktop, tablet, and mobile
+
+Output cards:
+
+Fully detail these first:
+
+* Emerging Research Opportunities
+* Literature Survey
+* Iteration & Feedback approval panel
+* Writing Studio abstract draft
+
+Represent the remaining stages with compact but credible mock sections:
+
+* Experiment Design
+* Situation Diagnosis
+* Publish & Influence
+* Memory & Growing
+
+Do not overbuild. Do not attempt to fully implement every future feature. The first version should feel coherent, stable, and demo-ready.
+
+---
+
+## Required files and structure
+
+Please create or update a clean frontend structure similar to:
+
+```txt
+src/
+  components/
+    Sidebar.tsx
+    HomeInput.tsx
+    ModeStepSelector.tsx
+    RunningWorkspace.tsx
+    ProcessBar.tsx
+    AgentStream.tsx
+    StreamItem.tsx
+    ToolBlock.tsx
+    DetailPanel.tsx
+    AgentControl.tsx
+    OutputCards/
+  data/
+    mockWorkflow.ts
+    mockTools.ts
+    mockPapers.ts
+    mockConferences.ts
+  services/
+    agentService.ts
+    workflowService.ts
+  types/
+    workflow.ts
+    tools.ts
+    papers.ts
+    conferences.ts
+  styles/
+    tokens.css
+    globals.css
+```
+
+If the existing project structure is different, adapt to it, but preserve the same separation of concerns:
+
+* components = UI only
+* data = mock data
+* services = replaceable data access layer
+* types = frontend-backend data contracts
+* styles = design tokens and global styles
+
+Keep services simple.
+
+Do not add Redux, Zustand, React Query, or complex state management unless the project already uses them.
+
+Use local React state for the first version.
+
+---
+
+## Backend-readiness requirement
+
+The frontend must be mock-first but backend-ready.
+
+Create service functions such as:
+
+```ts
+startAgentRun(taskInput)
+getWorkflowStages(runId)
+subscribeToAgentRun(runId, onEvent)
+getToolDetail(toolId)
+submitApproval({ runId, eventId, action })
+uploadResearchFile(file)
+```
+
+For now, these functions can return mock data or simulated events.
+
+Later, they should be replaceable with real backend API calls without rewriting the UI.
+
+Define TypeScript interfaces for:
+
+* WorkflowStage
+* AgentRun
+* StreamEvent
+* ToolBlock
+* ToolDetail
+* SourceChip
+* Citation
+* ApprovalGate
+* OutputCard
+* UploadedFile
+* Paper
+* Conference
+
+React components should consume typed data objects from services, not raw hard-coded workflow data.
+
+Do not scatter mock strings directly across JSX components.
+
+Do not implement backend logic inside frontend components.
+
+Do not assume the backend response shape unless it is defined in `src/types/`.
+
+---
+
+## State 1: Home / New Task Input Screen
+
+Build a clean home screen.
+
+Required content:
+
+### Left Sidebar
+
+Include:
+
+* Nobli logo / wordmark
+* Home
+* New task
+* All tasks
+* My Papers
+* Experiments
+* Writing Drafts
+* Conference Watch
+* Memory & Growing
+* Settings
+* Bottom user avatar
+* Credits / usage status
+
+### Main Center Area
+
+Headline:
+
+```txt
+Stay in the flow. Let research move.
+```
+
+### Home Mode Step Selector
+
+Replace normal mode tabs with a lightweight progress-bar-style mode selector.
+
+Modes:
+
+1. Explore
+2. Survey
+3. Experiment
+4. Write
+5. Publish
+
+This selector should look like a soft horizontal research workflow path, but it is not the same as the Running Workspace Process Bar.
+
+Behavior:
+
+* Clicking a mode changes the selected task mode.
+* The selected mode updates the input placeholder and example tasks if possible.
+* The selector represents selected research intent, not execution progress.
+* It should not imply that the agent has already started working.
+
+Visual rules:
+
+* Use subtle connected lines between modes.
+* Use pastel accent only for the selected mode.
+* Keep inactive modes pale gray.
+* Keep the component compact and calm.
+* Do not make it look like a SaaS onboarding stepper.
+* Do not use heavy gradients across the entire selector.
+* Do not make all stages look completed.
+* Do not add checkmarks unless the agent is actually running.
+* Do not confuse it with the Running Workspace Process Bar.
+
+Suggested label:
+
+```txt
+Choose research mode
+```
+
+### Large Input Box
+
+Placeholder:
+
+```txt
+Ask Nobli to explore, design, write, or publish your research…
+```
+
+Input controls:
+
+* Text input
+* Microphone icon
+* Upload file icon
+* Plus icon
+* Send button
+
+Example task cards:
+
+* Find emerging research opportunities in interpretable AI for computer vision.
+* Design an experiment for testing reasoning models.
+* Draft an abstract from my notes and experiment results.
+* Find upcoming conferences for this paper.
+* Prepare an OpenReview submission package.
+
+Interaction:
+
+When the user submits the default or any task, transition to the Running Agent Workspace.
+
+Use this default demo command:
+
+```txt
+I want to write a paper about explainable AI in computer vision and publish it in a strong venue.
+```
+
+### Home Screen Rules
+
+Do:
+
+* Keep it extremely clean.
+* Use lots of whitespace.
+* Make the input feel like the starting point of an agent workflow.
+* Keep example task cards compact.
+* Make the mode selector feel like research intent selection, not completed progress.
+
+Do not:
+
+* Create a marketing hero landing page.
+* Add generic feature sections.
+* Add large dashboard widgets.
+* Add colorful gradients.
+* Add fake analytics cards.
+
+---
+
+## State 2: Running Agent Workspace
+
+After the user submits a task, transition to a running workspace.
+
+The running workspace must feel like an agent is actively working.
+
+Use a 3-column Lemma-style layout:
+
+1. Task Sidebar
+2. Main Agent Workspace
+3. Detail / Tool Panel
+
+---
+
+## Column 1: Task Sidebar
+
+The left sidebar stays visible in the running state.
+
+Include:
+
+* Nobli logo / wordmark
+* Home
+* New task
+* All tasks
+* Current task highlighted
+* Task history
+* Credits
+* User profile
+
+Rules:
+
+* Keep sidebar compact.
+* Do not add complex navigation.
+* Current task should be visually highlighted.
+* Sidebar should support demo storytelling, not become the main focus.
+
+---
+
+## Column 2: Main Agent Workspace
+
+This is the central workspace where the agent’s work appears.
+
+### Top Area
+
+Include:
+
+* Current mode
+* Used credits indicator
+* Process bar
+* Time elapsed
+* Current task status
+
+### Running Workspace Process Bar
+
+This is the real workflow process bar.
+
+Process bar stages:
+
+1. Idea Discovery
+2. Literature Survey
+3. Experiment Design
+4. Iteration & Feedback
+5. Writing Studio
+6. Publish & Influence
+7. Memory & Growing
+
+The process bar must show:
+
+* Current stage
+* Completed stages
+* Next stage
+* Time elapsed
+* Current task status
+
+Behavior:
+
+* Clicking a process stage should scroll or jump the main stream to the relevant section.
+* Active and completed stages should visibly differ from inactive stages.
+
+Visual rules:
+
+* Use the styling from `design_system.md`.
+* This should feel more execution-oriented than the Home Mode Step Selector.
+* The Home Mode Step Selector and Running Workspace Process Bar must not look identical.
+* Do not reuse the exact same visual component for Home Mode Step Selector and Running Workspace Process Bar.
+* They may share tokens but must have different density, state logic, and visual emphasis.
+* The process bar may use progress fill and completed states.
+* The Home Mode Step Selector should not use completed states.
+
+---
+
+## Main Stream
+
+The central stream is the heart of the product.
+
+Show agent activity as a vertical timeline with timestamps or “Worked for XXs”.
+
+Example stream items:
+
+* Worked for 12s — Understanding research goal
+* Worked for 28s — Searching arXiv, Semantic Scholar, Papers with Code
+* Worked for 51s — Extracting research gaps
+* Worked for 1m 20s — Generating emerging research opportunities
+* Worked for 1m 42s — Waiting for human approval
+
+Each stream item should include:
+
+* Status pill: running / done / waiting for human / needs review
+* Short reasoning summary
+* Source chips when relevant
+* Clickable tool blocks when relevant
+
+Output cards should appear inside the stream, not as separate static pages.
+
+Output cards:
+
+Fully detailed in the first version:
+
+* Emerging Research Opportunities
+* Literature Survey
+* Iteration & Feedback approval panel
+* Writing Studio abstract draft
+
+Compact but credible mock sections:
+
+* Experiment Design
+* Situation Diagnosis
+* Publish & Influence / Incoming Conferences
+* Memory & Growing reminders
+
+---
+
+## Column 3: Detail / Tool Panel
+
+Header:
+
+```txt
+Detail
+```
+
+When no tool block is selected, show:
+
+```txt
+Click a tool block to view the full information.
+```
+
+When a tool block is clicked, update the detail panel with:
+
+* Tool name
+* Input JSON-like preview
+* Output / result preview
+* Sources
+* Citations
+* Status
+* Time used
+
+Example tools:
+
+* Literature Scraper
+* Paper Ranker
+* Novelty Scorer
+* Experiment Designer
+* Situation Diagnoser
+* Abstract Writer
+* Conference Monitor
+* Memory Tracker
+* Opportunity Ranker
+* Paper Clusterer
+* Gap Extractor
+
+---
+
+## Persistent Research Agent Control
+
+Add a floating or bottom-right agent control area in the running workspace.
+
+It must include:
+
+* Research Agent status: live
+* Mode toggle:
+
+  * Full Automation
+  * Discuss
+* Voice input
+* Text input
+* Upload file
+* Drag and drop paper
+* Send button
+
+Behavior:
+
+* Full Automation mode: agent continues automatically and only pauses at approval gates.
+* Discuss mode: agent asks clarifying questions before major steps.
+* The toggle must visibly change the status text.
+
+---
+
+## Required clickable interactions
+
+Implement these interactions in the prototype:
+
+1. Submit home input → transition to running workspace.
+2. Click Home Mode Step Selector modes → selected mode changes and input context updates.
+3. Click Running Workspace process bar stages → main stream jumps to the relevant section.
+4. Click tool block → right Detail panel updates.
+5. Toggle Full Automation / Discuss → status changes.
+6. Click upload icon → show drag-and-drop state.
+7. Click microphone icon → show `listening…` and fake transcript.
+8. Click Accept / Reject / Ask revision → timeline updates.
+9. Click Export PDF → show `PDF prepared`.
+10. Click Overleaf → show `Overleaf handoff prepared`.
+11. Click Send to phone → show `Reminder sent to mobile`.
+
+Voice and upload interactions should be simulated only.
+
+Do not request browser microphone permission.
+
+Do not actually upload files to a server.
+
+---
+
+## Mock data requirements
+
+Use centralized mock data.
+
+Default research topic:
+
+```txt
+Explainable AI in computer vision
+```
+
+Example papers:
+
+* Concept Bottleneck Models for Interpretable Vision
+* Prototype-based Explanations for Visual Recognition
+* Faithfulness Evaluation in Vision Explainability
+* Attribution Methods under Distribution Shift
+
+Example emerging opportunities:
+
+* Evaluation-first explainability benchmarks
+* Citation lineage and controversy maps
+* Human-centered explanation preference modeling
+* Reproducibility-first XAI experiment protocols
+
+Example conferences:
+
+* NeurIPS
+* ICML
+* ICLR
+* CVPR
+* ICCV
+* CHI
+* FAccT
+
+Keep mock data in `src/data/`.
+
+Do not scatter mock strings directly across JSX components.
+
+---
+
+## Visual and design requirements
+
+Strictly follow `design_system.md`.
+
+Use:
+
+* Minimal academic interface
+* Light gray and white workspace
+* Subtle borders
+* Soft shadows
+* Compact typography
+* Lots of whitespace
+* Calm serious agent workspace feeling
+* Local pastel accents only where allowed
+* Thin persistent progress bar
+* Monochrome icons by default
+* Glass surfaces only for cards, drawers, and floating elements
+
+Do not use:
+
+* Generic SaaS dashboard layout
+* Marketing landing page
+* Purple-blue neon gradients as the main identity
+* Abstract glowing spheres
+* Particles
+* 3D blobs
+* Magic wand icons
+* Sparkle icons
+* Robot icons
+* Rocket icons
+* Generic feature-card grids
+* Equal-weight card layouts everywhere
+* Fake analytics dashboards
+* Disconnected static module pages
+
+Do not use the title:
+
+```txt
+AHA Moment Radar
+```
+
+Use:
+
+```txt
+Emerging Research Opportunities
+```
+
+Keep:
+
+```txt
+Situation Diagnosis
+Memory & Growing
+```
+
+---
+
+## First-version quality bar
+
+The first version does not need real backend behavior.
+
+It must feel like:
+
+* The agent is actively working.
+* The workflow is end-to-end.
+* The human remains in control.
+* The product is for serious research work.
+* The UI is not a dashboard.
+* The outputs are connected to the agent process.
+* The product can move from idea to experiment to writing to publishing.
+* The Home Mode Step Selector helps users choose intent without being confused with execution progress.
+
+Prioritize demo stability and product clarity over implementation complexity.
+
+---
+
+## Verification instructions
+
+After implementation, run the app and take screenshots for:
+
+* Desktop: 1440px width
+* Tablet: 768px width
+* Mobile: 390px width
+
+Review the screenshots visually and check:
+
+1. Does the first screen communicate the product vision without explanation?
+2. Does the UI feel like an agentic research workspace, not a generic dashboard or landing page?
+3. Is the hierarchy clear between sidebar, input/workspace, progress bar, stream, and detail panel?
+4. Does the Home Mode Step Selector clearly feel like selected research intent, not completed task progress?
+5. Is the Running Workspace Process Bar clearly different from the Home Mode Step Selector and clearly related to actual agent execution?
+6. Are output cards, source chips, citations, and tool blocks visually connected to the agent stream?
+7. Does the Detail panel update when tool blocks are clicked?
+8. Are upload, microphone, approval, export, Overleaf, and Send to phone interactions showing visible state changes?
+9. Are there any broken layouts, clipped text, misleading labels, placeholder-looking elements, or fake dashboard patterns?
+10. Does the UI still follow `design_system.md` on tablet and mobile?
+11. On mobile, is the core workflow still understandable after layout collapse?
+12. Are mock data, services, and TypeScript types separated cleanly for future backend integration?
+
+If anything looks broken, generic, disconnected, or inconsistent with `design_system.md`, fix it before finishing.
+
+Do not stop after code generation. Run, screenshot, review, and refine.
+
+If automated screenshot capture is unavailable, still run the app locally, inspect the responsive layouts, and report what could and could not be verified.
