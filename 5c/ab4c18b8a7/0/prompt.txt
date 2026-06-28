@@ -1,0 +1,15 @@
+能不能push一下 然后merge到main 保证main最新
+
+---
+
+can you merge the branch feature/midware to main?
+
+---
+
+(.venv) ➜  research-claw git:(main) uvicorn agent.services.gateway:app --host 127.0.0.1 --port 18790
+ERROR:    Error loading ASGI app. Could not import module "agent.services.gateway".
+(.venv) ➜  research-claw git:(main)
+
+---
+
+我用uvicorn启动了后端 然后启动了 @../frontend/nobli_lovable_v1/ 用npm run dev, 在网页上提交了一个prompt之后 报错 INFO:     127.0.0.1:57490 - "OPTIONS /api/research-runs HTTP/1.1" 400 Bad Request
