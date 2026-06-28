@@ -1,0 +1,20 @@
+{
+  "cli_version": "0.7.7",
+  "checkpoint_id": "620371608ac6",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 5,
+  "files_touched": [
+    "research-claw/agent/scheduler/iterate.py",
+    "research-claw/cli/main.py",
+    "research-claw/docs/iterative-experiments.md"
+  ],
+  "sessions": [
+    {
+      "metadata": "/62/0371608ac6/0/metadata.json",
+      "transcript": "/62/0371608ac6/0/full.jsonl",
+      "content_hash": "/62/0371608ac6/0/content_hash.txt",
+      "prompt": ""
+    }
+  ]
+}
