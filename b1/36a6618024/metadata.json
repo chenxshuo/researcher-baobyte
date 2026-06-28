@@ -1,0 +1,27 @@
+{
+  "cli_version": "0.7.7",
+  "checkpoint_id": "b136a6618024",
+  "strategy": "manual-commit",
+  "branch": "feature/selfgrow",
+  "checkpoints_count": 5,
+  "files_touched": [
+    "research-claw/examples/budget-cot-paper/README.md",
+    "research-claw/examples/budget-cot-paper/experiment_matrix.py",
+    "research-claw/examples/budget-cot-paper/extra_pkgs.tex",
+    "research-claw/examples/budget-cot-paper/figures/budget_accuracy.pdf",
+    "research-claw/examples/budget-cot-paper/main.pdf",
+    "research-claw/examples/budget-cot-paper/main.tex",
+    "research-claw/examples/budget-cot-paper/neurips.sty",
+    "research-claw/examples/budget-cot-paper/plot.py",
+    "research-claw/examples/budget-cot-paper/problems.py",
+    "research-claw/examples/budget-cot-paper/results.tsv"
+  ],
+  "sessions": [
+    {
+      "metadata": "/b1/36a6618024/0/metadata.json",
+      "transcript": "/b1/36a6618024/0/full.jsonl",
+      "content_hash": "/b1/36a6618024/0/content_hash.txt",
+      "prompt": ""
+    }
+  ]
+}
