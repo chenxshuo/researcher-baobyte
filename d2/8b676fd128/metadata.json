@@ -1,0 +1,28 @@
+{
+  "cli_version": "0.7.7",
+  "checkpoint_id": "d28b676fd128",
+  "strategy": "manual-commit",
+  "branch": "feature/midware",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "frontend/nobli_lovable_v1/docs/api-contract.md",
+    "frontend/nobli_lovable_v1/src/components/cards.tsx",
+    "frontend/nobli_lovable_v1/src/lib/mock-data.ts",
+    "research-claw/agent/services/research_run_api.py"
+  ],
+  "sessions": [
+    {
+      "metadata": "/d2/8b676fd128/0/metadata.json",
+      "transcript": "/d2/8b676fd128/0/full.jsonl",
+      "content_hash": "/d2/8b676fd128/0/content_hash.txt",
+      "prompt": "/d2/8b676fd128/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 4517895,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 71217152,
+    "output_tokens": 174169,
+    "api_call_count": 524
+  }
+}

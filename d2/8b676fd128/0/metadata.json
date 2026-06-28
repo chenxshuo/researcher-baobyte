@@ -1,0 +1,50 @@
+{
+  "cli_version": "0.7.7",
+  "checkpoint_id": "d28b676fd128",
+  "session_id": "019f0b08-f7c5-7192-877b-0f6b5ed89ac2",
+  "strategy": "manual-commit",
+  "created_at": "2026-06-28T09:37:06.421945Z",
+  "branch": "feature/midware",
+  "checkpoints_count": 1,
+  "save_step_count": 1,
+  "files_touched": [
+    "frontend/nobli_lovable_v1/docs/api-contract.md",
+    "frontend/nobli_lovable_v1/src/components/cards.tsx",
+    "frontend/nobli_lovable_v1/src/lib/mock-data.ts",
+    "research-claw/agent/services/research_run_api.py"
+  ],
+  "agent": "Codex",
+  "model": "gpt-5.5",
+  "turn_id": "ba39cd6e7e22",
+  "token_usage": {
+    "input_tokens": 4517895,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 71217152,
+    "output_tokens": 174169,
+    "api_call_count": 524
+  },
+  "session_metrics": {
+    "turn_count": 35
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-06-28T09:37:05.504061Z",
+    "agent_lines": 0,
+    "agent_removed": 0,
+    "human_added": 85,
+    "human_modified": 4,
+    "human_removed": 0,
+    "total_committed": 85,
+    "total_lines_changed": 89,
+    "agent_percentage": 0,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 2,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0
+    }
+  ]
+}
