@@ -1,0 +1,66 @@
+好的 我们接下来我想完善一下 research experiment这个部分的能力 核心就是想让agent自己去通过不断的迭代提升自己 比如给定一个metric 和一个task agent通过一轮一轮的实验 尝试新方法 然后收集结果 评判 然后决定下一次改进； 把这个功能加入到 @research-claw/ 里面 我添加了一个仓库你可以参考 就是 @autoresearch/
+
+---
+
+那我如何使用这个功能呢
+
+---
+
+我们先想一个更好的任务 可以快速跑完 但也有一定的价值 还能够有比较好的指标优化出来 方便我去快速展示这个能力的demo
+
+---
+
+那我们展示的时候 我希望就是一个prompt in然后从idea调研 部署实验收集结果迭代实验方法 最后画图写论文 写abstract intro related work method experiments discussion 这整个流程现在该如何去做 ； 这个task可以得到一个什么样的学术研究问题的workshop级别的paper？
+
+---
+
+这个现象我们也要提出一个方法使得效果更好 在预算内默认的CoT反倒会下降 但是我们的better CoT可以更好
+
+---
+
+实验结果可以先填一个预期的结果 然后画图和生成pdf pdf需要 那我们展示的时候 我希望就是一个prompt in然后从idea调研 部署实验收集结果迭代实验方法 最后画图写论文/effort
+  写abstract intro related work method experiments discussion
+
+---
+
+workspace里面的东西也可以提交一下 ； selfgrow的我已经弄好了 你现在再看看
+
+---
+
+现在pull一下 把云端的main pull下来
+
+---
+
+那现在如果我想prompt in cli 然后直接生成做这个budget cot的研究 然后出来一个完整的报告和pdf 现在的代码可以实现么
+
+---
+
+你先直接给我一个那个你运行的指令 我写到readme里面 给judge一个直观的感受
+
+---
+
+我已经在/Users/shuochen/a-PhD-Repo/h-hackathon/researcher-baobyte/README.md 加了一些内容 你检查一下 补充一些如果需要
+
+---
+
+提交一下
+
+---
+
+提交一下删除
+
+---
+
+云端的pull一下 然后middleware这个branch合并到main
+
+---
+
+把合并好的提交
+
+---
+
+我刚pull了一下 midware里面有更新 你能merge到main么
+
+---
+
+现在这个main的分支里面 真实产物下载这里 还不是我想要的example里面的？
