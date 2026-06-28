@@ -1,0 +1,25 @@
+{
+  "cli_version": "0.7.7",
+  "checkpoint_id": "4278c55a8d96",
+  "strategy": "manual-commit",
+  "branch": "feature/midware",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "frontend/nobli_lovable_v1/vite.config.ts"
+  ],
+  "sessions": [
+    {
+      "metadata": "/42/78c55a8d96/0/metadata.json",
+      "transcript": "/42/78c55a8d96/0/full.jsonl",
+      "content_hash": "/42/78c55a8d96/0/content_hash.txt",
+      "prompt": "/42/78c55a8d96/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 4098923,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 63459968,
+    "output_tokens": 161684,
+    "api_call_count": 479
+  }
+}
