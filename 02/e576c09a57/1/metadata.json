@@ -1,0 +1,115 @@
+{
+  "cli_version": "0.7.7",
+  "checkpoint_id": "02e576c09a57",
+  "session_id": "019f0b17-d107-75a3-972b-b5f4a26d8592",
+  "strategy": "manual-commit",
+  "created_at": "2026-06-28T05:55:00.176006Z",
+  "branch": "main",
+  "checkpoints_count": 4,
+  "save_step_count": 4,
+  "files_touched": [
+    "frontend/nobli_lovable_v1/DESIGN_SYSTEM.md",
+    "frontend/nobli_lovable_v1/docs/api-contract.md",
+    "frontend/nobli_lovable_v1/package-lock.json",
+    "frontend/nobli_lovable_v1/src/components/AgentControl.tsx",
+    "frontend/nobli_lovable_v1/src/components/AgentStream.tsx",
+    "frontend/nobli_lovable_v1/src/components/DetailPanel.tsx",
+    "frontend/nobli_lovable_v1/src/components/FinalPaperViewer.tsx",
+    "frontend/nobli_lovable_v1/src/components/HomeScreen.tsx",
+    "frontend/nobli_lovable_v1/src/components/ProcessBar.tsx",
+    "frontend/nobli_lovable_v1/src/components/Sidebar.tsx",
+    "frontend/nobli_lovable_v1/src/components/cards.tsx",
+    "frontend/nobli_lovable_v1/src/routeTree.gen.ts",
+    "frontend/nobli_lovable_v1/src/routes/index.tsx",
+    "frontend/nobli_lovable_v1/src/styles.css"
+  ],
+  "agent": "Codex",
+  "model": "gpt-5.4",
+  "turn_id": "e9b25279468e",
+  "token_usage": {
+    "input_tokens": 1784388,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 25024128,
+    "output_tokens": 129185,
+    "api_call_count": 222
+  },
+  "session_metrics": {
+    "turn_count": 4
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-06-28T05:54:59.888525Z",
+    "agent_lines": 7528,
+    "agent_removed": 0,
+    "human_added": 2154,
+    "human_modified": 1160,
+    "human_removed": 0,
+    "total_committed": 10262,
+    "total_lines_changed": 10842,
+    "agent_percentage": 69.43368382217304,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 0,
+      "user_lines_removed": 1,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_removed_per_file": {
+        "frontend/README.md": 1
+      }
+    },
+    {
+      "checkpoint_number": 2,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 8623,
+      "agent_lines_removed": 1
+    },
+    {
+      "checkpoint_number": 3,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 8623,
+      "agent_lines_removed": 1
+    },
+    {
+      "checkpoint_number": 4,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 9161,
+      "agent_lines_removed": 1
+    },
+    {
+      "checkpoint_number": 5,
+      "user_lines_added": 1657,
+      "user_lines_removed": 580,
+      "agent_lines_added": 9765,
+      "agent_lines_removed": 1,
+      "user_added_per_file": {
+        "frontend/nobli_lovable_v1/src/components/AgentControl.tsx": 44,
+        "frontend/nobli_lovable_v1/src/components/AgentStream.tsx": 75,
+        "frontend/nobli_lovable_v1/src/components/DetailPanel.tsx": 49,
+        "frontend/nobli_lovable_v1/src/components/FinalPaperViewer.tsx": 928,
+        "frontend/nobli_lovable_v1/src/components/HomeScreen.tsx": 91,
+        "frontend/nobli_lovable_v1/src/components/ProcessBar.tsx": 95,
+        "frontend/nobli_lovable_v1/src/components/Sidebar.tsx": 150,
+        "frontend/nobli_lovable_v1/src/components/cards.tsx": 37,
+        "frontend/nobli_lovable_v1/src/routes/index.tsx": 51,
+        "frontend/nobli_lovable_v1/src/styles.css": 137
+      },
+      "user_removed_per_file": {
+        "frontend/nobli_lovable_v1/src/components/AgentControl.tsx": 18,
+        "frontend/nobli_lovable_v1/src/components/AgentStream.tsx": 41,
+        "frontend/nobli_lovable_v1/src/components/DetailPanel.tsx": 26,
+        "frontend/nobli_lovable_v1/src/components/FinalPaperViewer.tsx": 257,
+        "frontend/nobli_lovable_v1/src/components/HomeScreen.tsx": 20,
+        "frontend/nobli_lovable_v1/src/components/ProcessBar.tsx": 39,
+        "frontend/nobli_lovable_v1/src/components/Sidebar.tsx": 76,
+        "frontend/nobli_lovable_v1/src/components/cards.tsx": 20,
+        "frontend/nobli_lovable_v1/src/routes/index.tsx": 16,
+        "frontend/nobli_lovable_v1/src/styles.css": 67
+      }
+    }
+  ]
+}

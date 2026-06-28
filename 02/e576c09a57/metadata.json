@@ -3,21 +3,42 @@
   "checkpoint_id": "02e576c09a57",
   "strategy": "manual-commit",
   "branch": "main",
-  "checkpoints_count": 1,
-  "files_touched": null,
+  "checkpoints_count": 5,
+  "files_touched": [
+    "frontend/nobli_lovable_v1/DESIGN_SYSTEM.md",
+    "frontend/nobli_lovable_v1/docs/api-contract.md",
+    "frontend/nobli_lovable_v1/package-lock.json",
+    "frontend/nobli_lovable_v1/src/components/AgentControl.tsx",
+    "frontend/nobli_lovable_v1/src/components/AgentStream.tsx",
+    "frontend/nobli_lovable_v1/src/components/DetailPanel.tsx",
+    "frontend/nobli_lovable_v1/src/components/FinalPaperViewer.tsx",
+    "frontend/nobli_lovable_v1/src/components/HomeScreen.tsx",
+    "frontend/nobli_lovable_v1/src/components/ProcessBar.tsx",
+    "frontend/nobli_lovable_v1/src/components/Sidebar.tsx",
+    "frontend/nobli_lovable_v1/src/components/cards.tsx",
+    "frontend/nobli_lovable_v1/src/routeTree.gen.ts",
+    "frontend/nobli_lovable_v1/src/routes/index.tsx",
+    "frontend/nobli_lovable_v1/src/styles.css"
+  ],
   "sessions": [
     {
       "metadata": "/02/e576c09a57/0/metadata.json",
       "transcript": "/02/e576c09a57/0/full.jsonl",
       "content_hash": "/02/e576c09a57/0/content_hash.txt",
       "prompt": "/02/e576c09a57/0/prompt.txt"
+    },
+    {
+      "metadata": "/02/e576c09a57/1/metadata.json",
+      "transcript": "/02/e576c09a57/1/full.jsonl",
+      "content_hash": "/02/e576c09a57/1/content_hash.txt",
+      "prompt": "/02/e576c09a57/1/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 390888,
+    "input_tokens": 2175276,
     "cache_creation_tokens": 0,
-    "cache_read_tokens": 10226560,
-    "output_tokens": 74679,
-    "api_call_count": 93
+    "cache_read_tokens": 35250688,
+    "output_tokens": 203864,
+    "api_call_count": 315
   }
 }
