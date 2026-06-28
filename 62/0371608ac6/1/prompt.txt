@@ -1,0 +1,1 @@
+好的 我们接下来我想完善一下 research experiment这个部分的能力 核心就是想让agent自己去通过不断的迭代提升自己 比如给定一个metric 和一个task agent通过一轮一轮的实验 尝试新方法 然后收集结果 评判 然后决定下一次改进； 把这个功能加入到 @research-claw/ 里面 我添加了一个仓库你可以参考 就是 @autoresearch/

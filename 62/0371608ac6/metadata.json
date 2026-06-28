@@ -3,7 +3,7 @@
   "checkpoint_id": "620371608ac6",
   "strategy": "manual-commit",
   "branch": "main",
-  "checkpoints_count": 5,
+  "checkpoints_count": 6,
   "files_touched": [
     "research-claw/agent/scheduler/iterate.py",
     "research-claw/cli/main.py",
@@ -15,6 +15,19 @@
       "transcript": "/62/0371608ac6/0/full.jsonl",
       "content_hash": "/62/0371608ac6/0/content_hash.txt",
       "prompt": ""
+    },
+    {
+      "metadata": "/62/0371608ac6/1/metadata.json",
+      "transcript": "/62/0371608ac6/1/full.jsonl",
+      "content_hash": "/62/0371608ac6/1/content_hash.txt",
+      "prompt": "/62/0371608ac6/1/prompt.txt"
     }
-  ]
+  ],
+  "token_usage": {
+    "input_tokens": 7213,
+    "cache_creation_tokens": 408705,
+    "cache_read_tokens": 9097434,
+    "output_tokens": 27837,
+    "api_call_count": 27
+  }
 }
