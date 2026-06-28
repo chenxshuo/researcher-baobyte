@@ -1,0 +1,18 @@
+{
+  "cli_version": "0.7.7",
+  "checkpoint_id": "4abba9ccf0b8",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 5,
+  "files_touched": [
+    "research-claw/agent/services/gateway_server.py"
+  ],
+  "sessions": [
+    {
+      "metadata": "/4a/bba9ccf0b8/0/metadata.json",
+      "transcript": "/4a/bba9ccf0b8/0/full.jsonl",
+      "content_hash": "/4a/bba9ccf0b8/0/content_hash.txt",
+      "prompt": ""
+    }
+  ]
+}
