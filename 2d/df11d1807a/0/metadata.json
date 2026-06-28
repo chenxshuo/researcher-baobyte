@@ -1,0 +1,32 @@
+{
+  "cli_version": "0.7.7",
+  "checkpoint_id": "2ddf11d1807a",
+  "session_id": "019f0ada-99e2-7440-8f90-e364266236ae",
+  "strategy": "manual-commit",
+  "created_at": "2026-06-28T10:17:29.263691Z",
+  "branch": "main",
+  "checkpoints_count": 5,
+  "files_touched": [
+    "frontend/nobli_lovable_v1/src/components/FinalPaperViewer.tsx"
+  ],
+  "agent": "Codex",
+  "model": "gpt-5.5",
+  "turn_id": "470e056d5763",
+  "checkpoint_transcript_start": 332,
+  "transcript_lines_at_start": 332,
+  "session_metrics": {
+    "turn_count": 5
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-06-28T10:17:29.217164Z",
+    "agent_lines": 22,
+    "agent_removed": 2,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 22,
+    "total_lines_changed": 24,
+    "agent_percentage": 100,
+    "metric_version": 2
+  }
+}
