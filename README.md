@@ -1,9 +1,11 @@
 # Nobli: Research at Noble Speed, Growth at Your Pace 
 
-This project is a multi-agent research operating system built by Baobyte. Give
-it a research question and it autonomously runs the full loop — survey, design
-and run experiments, iterate on the method, plot results, and write a paper —
-ending in a compiled PDF.
+Nobli is a product demo built during the **Paris Research Hackathon / EHL Paris Match**, organized by **TUM.ai, Iterate, and the European Hackathon League** (https://ehl.gg/). The demo was developed by **Team BaoByte** from **June 27 to June 28, 2026**, at **Metafore Vincennes Foch, Paris, France**.  Give it a research question and it autonomously runs the full loop: idea spark, design and run experiments, iterate on the method, plot results, and write a paper. 
+
+Beyond automation, Nobli is also designed to support researchers’ growth journey. Suggestions, reviews, and revision feedback are made transparent and visible, so the system not only makes the research workflow smoother, but also helps researchers learn by doing and improve their research capabilities over time.
+
+## Team BaoByte
+Build by Wenchao Hao · Shuo Chen · Huang Lin · Yize Sun
 
 ## Prerequisites
 
