@@ -5,7 +5,7 @@ Nobli is a product demo built during the **Paris Research Hackathon / EHL Paris 
 Beyond automation, Nobli is also designed to support researchers’ growth journey. Suggestions, reviews, and revision feedback are made transparent and visible, so the system not only makes the research workflow smoother, but also helps researchers learn by doing and improve their research capabilities over time.
 
 ## Team BaoByte
-Build by Wenchao Hao · Shuo Chen · Huang Lin · Yize Sun
+Build by Wenchao Hao · Shuo Chen · Lin Huang · Yize Sun
 
 ## Prerequisites
 
